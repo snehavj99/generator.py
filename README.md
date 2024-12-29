@@ -5,7 +5,7 @@ import random     #built in function to generate a random number
 import string     #built in function to generate string module
 
 def generate_password(length):     #the define's a function that generates the password
-    characters = string.ascii_letters + string.digits + string.punctuation                                                        #string concatenation of letters,digits,symbols.
+    characters = string.ascii_letters + string.digits + string.punctuation                                                        
     return ''.join(random.choice(characters) for _ in range(length))                                                              #selects a random characters from string and returns
 
 def main():
